@@ -1,0 +1,10 @@
+prefix=@CMAKE_INSTALL_PREFIX@
+exec_prefix=@CMAKE_INSTALL_PREFIX@
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: progressbar
+Description: Pure C progressbar
+Version: @PROJECT_VER@
+Libs: -L${libdir} -lprogressbar
+Cflags: -I${includedir}
