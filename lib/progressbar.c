@@ -13,7 +13,7 @@
 #include <termcap.h>  /* tgetent, tgetnum */
 #include <assert.h>
 #include <limits.h>
-#include "progressbar.h"
+#include "progressbar/progressbar.h"
 
 ///  How wide we assume the screen is if termcap fails.
 enum { DEFAULT_SCREEN_WIDTH = 80 };
@@ -49,7 +49,7 @@ progressbar *progressbar_new_with_format(const char *label, unsigned long max, c
   if(new == NULL) {
     return NULL;
   }
-    
+
   new->max = max;
   new->value = 0;
   new->start = time(NULL);

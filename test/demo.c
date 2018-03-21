@@ -31,8 +31,8 @@
  *
  **/
 
- #include "progressbar.h"
- #include "statusbar.h"
+ #include "progressbar/progressbar.h"
+ #include "progressbar/statusbar.h"
  #include <unistd.h>
 
 #define SLEEP_US 100000
